@@ -1,0 +1,9 @@
+* {
+    margin: 0px
+}
+
+.header {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+}

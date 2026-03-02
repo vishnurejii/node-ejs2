@@ -1,0 +1,16 @@
+  <body>
+
+  <h1>Product Admin Interface</h1>
+    <p><a href="/add">Add Product</a></p>
+    <ol>
+    <% products.forEach(product => { %>
+    <li>
+        <%= product.name  %>-
+        <%= product.description  %>-
+        <%= product.price  %> -
+        <a href="/<%= product._id %>/edit">Edit</a> &nbsp;
+        <a href="/<%= product._id %>/delete">Delete</a>
+    </li>
+    <% }) %>
+    </ol>
+</body>
